@@ -1,16 +1,66 @@
-# React + Vite
+ 🚀 John Ezebius Dutch | Portfolio 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Karibu kwenye portfolio yangu ya kisasa! Mimi ni mtaalamu wa IT, Full-Stack Developer, na muasisi wa **Dutch Tech Studio**. Website hii ni kioo cha ujuzi wangu katika kutatua changamoto za kijamii kupitia teknolojia.
 
-Currently, two official plugins are available:
+🌐 **Live Demo:** [https://dutch-website.vercel.app/](https://dutch-website.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+ 🛠️ Tech Stack & Skills
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Nimetumia teknolojia za kisasa kuhakikisha website hii ni nyepesi (fast), salama, na inavutia:
 
-## Expanding the ESLint configuration
+- Frontend:** React.js (Vite), Tailwind CSS, Framer Motion (for animations)
+- Icons:** Lucide-React
+- Media:** Design za flyers na mifumo kupitia Adobe Premiere Pro & CapCut
+- Deployment:** Vercel (CI/CD via GitHub)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features za Kipekee
+
+- **Custom Cursor Interaction**: Experience ya kipekee kwa mtumiaji wa PC.
+- **Infinite Tech Slider**: Inaonyesha "Tech Stack" yangu (Python, PHP, React, IoT, Linux, etc.) kwa mtindo wa kisasa.
+- **Mobile Responsive**: Website imeboreshwa kuonekana vizuri kwenye simu na tablets.
+- **Glassmorphism Design**: Muonekano wa giza wenye athari za kioo (Modern Dark UI).
+- **Direct CV Access**: Uwezo wa ku-view, ku-print, au ku-download CV yangu moja kwa moja.
+
+---
+
+## 📂 Miradi Iliyoangaziwa (Featured Projects)
+
+1. Smart Agriculture Monitoring System (IoT)**
+   - Mfumo wa kufuatilia unyevunyevu na hali ya udongo kwa ajili ya kilimo cha kisasa.
+   - **Tech:** Sensors, Arduino, C++.
+
+2. **Notes Management App**
+   - Mfumo kamili wa CRUD (Create, Read, Update, Delete) kwa ajili ya usimamizi wa kumbukumbu.
+   - **Tech:** PHP, MySQL, Bootstrap.
+
+3. **Dutch Hub UI/UX**
+   - Design za kipekee za mifumo na flyers zinazopatikana kwenye gallery ya website.
+
+---
+
+## 🚀 Jinsi ya Ku-run Hii Project Locally
+
+1. **Clone Repo:**
+   ```bash
+   git clone [https://github.com/dutch5242/Dutch-Website.git](https://github.com/dutch5242/Dutch-Website.git)
+ Install Dependencies:
+
+Bash
+npm install
+Start Development Server:
+
+Bash
+npm run dev
+📬 Tuzungumze (Connect with Me)
+Niko tayari kwa ajili ya miradi mipya, ushirikiano, au nafasi za kazi:
+
+📺 YouTube: Dutch Tech Studio
+
+📧 Email: dutch5242@gmail.com
+
+📍 Location: Arusha, Tanzania
+
+📱 WhatsApp: +255 744 853 054  
