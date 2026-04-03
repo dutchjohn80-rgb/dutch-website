@@ -64,3 +64,46 @@ Niko tayari kwa ajili ya miradi mipya, ushirikiano, au nafasi za kazi:
 📍 Location: Arusha, Tanzania
 
 📱 WhatsApp: +255 744 853 054  
+
+
+# 🚀 My 2026 Development Roadmap | John Dutch
+
+Mimi ni mtaalamu wa IT ninayelenga kutatua changamoto za jamii kupitia mifumo ya kidijitali. Huu ni mpango wangu wa ujenzi wa miradi (Project Building Pipeline) kuanzia ngazi ya awali hadi mifumo tata ya AI na IoT.
+
+---
+
+## 🏗️ Project Pipeline & Status
+
+| Level | Project Name | Tech Stack | Status |
+| :--- | :--- | :--- | :--- |
+| 🟢 **L1** | Student Accommodation Finder | Laravel + Flutter | ⏳ In Progress |
+| 🟢 **L1** | Small Business Inventory | Laravel + React | 📅 Planned |
+| 🟢 **L1** | School Performance Tracking | Laravel + Flutter | 📅 Planned |
+| 🟡 **L2** | Digital Health Appointment | Laravel + Flutter + React | 📅 Planned |
+| 🟡 **L2** | E-Waste Management System | Laravel + Flutter | 📅 Planned |
+| 🟡 **L2** | Mobile Job Matching Platform | Laravel + Flutter | 📅 Planned |
+| 🟠 **L3** | Smart Farm Management | Laravel + Flutter | 📅 Planned |
+| 🟠 **L3** | Agri Marketplace System | Laravel + Flutter + React | 📅 Planned |
+| 🟠 **L3** | Public Transport Tracking | Django + Flutter | 📅 Planned |
+| 🔴 **L4** | AI-Based Crop Disease Detection | Django + Flutter + AI | 🔥 Next Big Goal |
+| 🔴 **L4** | Smart Water Monitoring | Laravel + IoT | 🔥 Next Big Goal |
+
+---
+
+## 🛠️ Tech Stack Focus
+- **Backend:** Laravel, Django, Node.js
+- **Mobile:** Flutter (Dart)
+- **Frontend:** React.js, Tailwind CSS
+- **Database:** MySQL, PostgreSQL, Firebase
+- **Specialized:** IoT Sensors, Image Recognition (AI)
+
+---
+
+## 📈 Learning Goals
+- [ ] Mastering Real-time Data with Socket.io (for Transport Tracking)
+- [ ] Integrating Payment Gateways (AzamPay/PesaPal) for Agri-Marketplace
+- [ ] Implementing Machine Learning models for Crop Disease Detection
+
+---
+💬 **"Technology is only useful when it solves a human problem."**
+Check out my live portfolio: [dutch-website.vercel.app](https://dutch-website.vercel.app/)
