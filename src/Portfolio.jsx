@@ -300,7 +300,7 @@ export default function Portfolio() {
 
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/75 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-          <a href="#home" className="text-sm font-black tracking-[0.35em] text-white">
+          <a href="#home" data-cursor="link" className="text-sm font-black tracking-[0.35em] text-white">
             DUTCH
           </a>
           <nav className="hidden items-center gap-2 rounded-full border border-white/10 bg-white/5 p-1 md:flex">
@@ -311,6 +311,7 @@ export default function Portfolio() {
                 <a
                   key={link.id}
                   href={`#${link.id}`}
+                  data-cursor="link"
                   className={`rounded-full px-4 py-2 text-sm font-medium transition-all ${
                     isActive
                       ? 'bg-blue-600 text-white shadow-lg shadow-blue-900/40'
@@ -332,6 +333,7 @@ export default function Portfolio() {
                 <a
                   key={`${link.id}-mobile`}
                   data-nav-id={link.id}
+                  data-cursor="link"
                   href={`#${link.id}`}
                   className={`rounded-full border px-4 py-2 text-sm font-medium transition-all ${
                     isActive
@@ -368,6 +370,7 @@ export default function Portfolio() {
               href="/CURRICULUM_VITAE.pdf"
               target="_blank"
               rel="noreferrer"
+              data-cursor="button"
               className="flex min-h-12 items-center justify-center gap-2 rounded-xl border border-blue-500/30 bg-blue-500/10 px-5 py-3 text-sm font-bold text-blue-100 transition-all hover:border-blue-400/60 hover:bg-blue-500/20 sm:px-6 sm:text-base"
             >
               <Eye size={18} />
@@ -376,6 +379,7 @@ export default function Portfolio() {
             <a
               href="/CURRICULUM_VITAE.pdf"
               download
+              data-cursor="button"
               className="flex min-h-12 items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-bold text-white transition-all hover:bg-blue-500 sm:px-6 sm:text-base"
             >
               <Download size={18} />
@@ -384,6 +388,7 @@ export default function Portfolio() {
             <button
               type="button"
               onClick={() => window.print()}
+              data-cursor="button"
               className="flex min-h-12 items-center justify-center gap-2 rounded-xl border border-white/20 px-5 py-3 text-sm font-bold text-white transition-all hover:bg-white/10 sm:px-6 sm:text-base"
             >
               <Printer size={18} />
@@ -391,6 +396,7 @@ export default function Portfolio() {
             </button>
             <a
               href="#contact"
+              data-cursor="button"
               className="flex min-h-12 items-center justify-center gap-2 rounded-xl border border-slate-700 bg-slate-800 px-5 py-3 text-sm font-medium text-white transition-all hover:bg-slate-700 sm:px-6 sm:text-base"
             >
               <MessageSquare size={20} />
@@ -515,7 +521,7 @@ export default function Portfolio() {
             const Icon = project.icon;
 
             return (
-              <div key={project.id} className="group overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/50 transition-all hover:border-slate-700">
+              <div key={project.id} data-cursor="card" className="group overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/50 transition-all hover:border-slate-700">
                 <div className="flex h-48 items-center justify-center bg-slate-800 text-slate-600">
                   <Icon size={40} className="transition-transform group-hover:scale-110" />
                 </div>
@@ -530,17 +536,18 @@ export default function Portfolio() {
                     ))}
                   </div>
                   <div className="mt-6 flex flex-wrap gap-4">
-                    <a href={project.githubUrl} target="_blank" rel="noreferrer" className="flex items-center gap-1 text-sm text-slate-400 hover:text-white">
+                    <a href={project.githubUrl} target="_blank" rel="noreferrer" data-cursor="link" className="flex items-center gap-1 text-sm text-slate-400 hover:text-white">
                       <GitBranch size={16} /> GitHub
                     </a>
                     {project.liveUrl ? (
-                      <a href={project.liveUrl} target="_blank" rel="noreferrer" className="flex items-center gap-1 text-sm text-blue-500 hover:text-blue-400">
+                      <a href={project.liveUrl} target="_blank" rel="noreferrer" data-cursor="link" className="flex items-center gap-1 text-sm text-blue-500 hover:text-blue-400">
                         <ExternalLink size={16} /> Live Demo
                       </a>
                     ) : null}
                     <button
                       type="button"
                       onClick={() => setSelectedProject(project)}
+                      data-cursor="button"
                       className="flex items-center gap-2 text-sm font-medium text-white transition hover:text-blue-300"
                     >
                       View Details <ArrowRight size={16} />
@@ -564,6 +571,7 @@ export default function Portfolio() {
               key={`${item.label}-${item.src}`}
               type="button"
               onClick={() => setSelectedGalleryItem(item)}
+              data-cursor="media"
               className={`group relative aspect-square overflow-hidden rounded-2xl border border-white/10 bg-slate-800 text-left transition-all duration-300 ${item.border}`}
             >
               <img src={item.src} alt={item.alt} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
@@ -591,6 +599,7 @@ export default function Portfolio() {
                 href="http://www.youtube.com/@dutchtech-k7l"
                 target="_blank"
                 rel="noreferrer"
+                data-cursor="link"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-red-600 px-5 py-2.5 font-medium text-white shadow-lg shadow-red-600/20 transition-all hover:bg-red-500 sm:w-auto"
               >
                 <Video size={20} />
@@ -613,7 +622,7 @@ export default function Portfolio() {
                 <label className="text-sm font-medium text-slate-400">Message / Suggestions</label>
                 <textarea rows="4" name="message" value={formData.message} onChange={handleInputChange} className="mt-1 w-full rounded-xl border border-slate-700 bg-slate-800 px-4 py-3 text-white transition-colors focus:border-blue-500 focus:outline-none" placeholder="Write your suggestions here..." required></textarea>
               </div>
-              <button type="submit" disabled={isSending} className="flex w-full items-center justify-center gap-3 rounded-xl bg-blue-600 py-3 font-medium text-white transition-colors hover:bg-blue-500 disabled:cursor-not-allowed disabled:opacity-70">
+              <button type="submit" disabled={isSending} data-cursor="button" className="flex w-full items-center justify-center gap-3 rounded-xl bg-blue-600 py-3 font-medium text-white transition-colors hover:bg-blue-500 disabled:cursor-not-allowed disabled:opacity-70">
                 {isSending ? (
                   <>
                     <span className="h-5 w-5 animate-spin rounded-full border-2 border-white/25 border-t-white"></span>
@@ -653,7 +662,7 @@ export default function Portfolio() {
               <div>
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   {selectedProject.screenshots.map((shot) => (
-                    <button key={shot.caption} type="button" onClick={() => setSelectedGalleryItem({ src: shot.src, alt: shot.alt, label: shot.caption })} className="group overflow-hidden rounded-2xl border border-white/10 bg-slate-800 text-left">
+                    <button key={shot.caption} type="button" onClick={() => setSelectedGalleryItem({ src: shot.src, alt: shot.alt, label: shot.caption })} data-cursor="media" className="group overflow-hidden rounded-2xl border border-white/10 bg-slate-800 text-left">
                       <img src={shot.src} alt={shot.alt} className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                       <div className="p-4">
                         <p className="text-sm text-slate-300">{shot.caption}</p>
@@ -680,12 +689,12 @@ export default function Portfolio() {
                   ))}
                 </div>
                 <div className="mt-8 flex flex-wrap gap-4">
-                  <a href={selectedProject.githubUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-5 py-3 text-sm font-medium text-white transition hover:bg-white/10">
+                  <a href={selectedProject.githubUrl} target="_blank" rel="noreferrer" data-cursor="link" className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-5 py-3 text-sm font-medium text-white transition hover:bg-white/10">
                     <GitBranch size={16} />
                     View Repository
                   </a>
                   {selectedProject.liveUrl ? (
-                    <a href={selectedProject.liveUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-500">
+                    <a href={selectedProject.liveUrl} target="_blank" rel="noreferrer" data-cursor="link" className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-500">
                       <ExternalLink size={16} />
                       Open Live Demo
                     </a>
